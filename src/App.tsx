@@ -20,6 +20,7 @@ function App() {
   const error = parseError || parseUsersError;
 
   const onFileUpload: ChangeEventHandler<HTMLInputElement> = (event) => {
+    console.debug("Change event:", event);
     const file = event.target.files?.[0];
     if (!file) return;
     parseFile(file);

@@ -59,8 +59,8 @@ export const UserTable: FC<UserTableProps> = ({ users }) => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
-            <UserRow key={user.fio} user={user} />
+          {users.map((user, index) => (
+            <UserRow key={user.fio + index} user={user} />
           ))}
         </tbody>
       </table>

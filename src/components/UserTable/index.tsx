@@ -49,7 +49,7 @@ export const UserTable: FC<UserTableProps> = ({ users }) => {
   return (
     <div>
       <h4>Общий список сотрудников с зарплатой и отпускными</h4>
-      <p>Размер отпускных от заработной платы составляет: {vacationPercent}%</p>
+      <p>Формула высчитывания размера отпускных: зарплата * процент отпускных = ${vacationPercent}%</p>
       <table className={styles.table}>
         <thead>
           <tr>
